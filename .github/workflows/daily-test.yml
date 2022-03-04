@@ -1,0 +1,26 @@
+# .github/workflows/daily-test.yml
+name: test data
+
+on:
+  schedule:
+    # Runs "at everyday At 01:00 " (see https://crontab.guru)
+    - cron: '0 1 * * *'
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [ '16' ]
+    steps:
+      - uses: actions/checkout@v1
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Run Test
+        run: |
+          npm i
+          npm update
+          node index.js "YP" "21 Feb 2022"
