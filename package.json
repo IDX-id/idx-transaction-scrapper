@@ -1,0 +1,19 @@
+{
+  "name": "idx-transaction-scrapper",
+  "version": "1.0.0",
+  "description": "get idx transaction daily summary",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rahadiana nugraha",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "got": "^10.4.0",
+    "html-table-to-json": "^1.0.0",
+    "jsdom": "^16.2.2",
+    "qs": "^6.10.3",
+    "query-selector": "^2.0.0"
+  }
+}
