@@ -3,8 +3,8 @@ name: test data
 
 on:
   schedule:
-    # Runs "at everyday At 01:00 " (see https://crontab.guru)
-    - cron: '0 1 * * *'
+    # Runs "At 00:00 on every day-of-week from Monday through Friday." (see https://crontab.guru)
+    - cron: '0 0 * * 1-5'
 
 jobs:
   build:
