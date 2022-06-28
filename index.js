@@ -96,6 +96,7 @@ axios(config)
         fs.mkdirSync("broker/"+InputBroker);
         }
       //Create File
+      results.splice(-1);
       fs.writeFileSync("broker/"+InputBroker+"/"+date.replace(/ /g, "_")+'.json', JSON.stringify(results))
       //file written successfully
     } catch (err) {
