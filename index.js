@@ -43,7 +43,7 @@ var
   }),
   config = {
     method: 'post',
-    url: 'https://rti.co.id/?m_id=1&sub_m=s15&sub_sub_m=2',
+    url: 'https://analytics2.rti.co.id/?m_id=1&sub_m=s15&sub_sub_m=2',
     headers: { 
       'Content-Type': 'application/x-www-form-urlencoded', 
       'Cookie': 'JSESSIONID=36A036189823A0A657D7ACB9D27F9079.worker1'
